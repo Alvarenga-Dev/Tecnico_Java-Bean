@@ -11,8 +11,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-         <jsp:setProperty property="*" name="user"/>
+        <%-- <jsp:setProperty property="*" name="user"/> --%>
             
-        <h1>Hello, <jsp:getProperty property="name" name="user"/>!</h1>
+        <h1>Hello, ${ param.name }!</h1>
     </body>
 </html>
